@@ -1,0 +1,53 @@
+/* Hide scrollbar for Chrome, Safari and Opera */
+.counter__numbers::-webkit-scrollbar {
+  display: none;
+}
+/* Hide scrollbar for IE, Edge and Firefox */
+.counter__numbers {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  margin: 5rem 0;
+}
+
+.counter__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.counter__numbers {
+  overflow: scroll; /* do not remove */
+  scroll-snap-type: y mandatory; /* do not remove */
+
+  height: 7.7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.counter__number {
+  scroll-snap-align: start; /* do not remove */
+
+  height: 2rem;
+  font-size: 2rem;
+  color: #adb5bd;
+  font-weight: 400;
+}
+
+.counter__number--selected {
+  color: #172b4d;
+  font-weight: 600;
+}
+
+.counter__title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #172b4d;
+}
